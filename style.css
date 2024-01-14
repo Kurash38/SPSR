@@ -1,0 +1,344 @@
+﻿
+/* Портирование шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Общие стили */
+body 
+{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+}
+
+
+.container
+{
+        max-width: 970px;
+        padding: 0 15px;
+        margin: 0 auto;
+}
+
+p {
+        color: #6A859C;
+        line-height: 1.8;
+}
+
+.hide{
+        display: none !important;
+}
+
+.title3 {
+        margin-bottom: 17px;
+        font-size: 30px;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #676775;
+
+}
+
+.subtitle {
+        font-size: 17px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #8e8e9c
+}
+
+.title-wrapper {
+        margin-bottom: 60px;
+}
+
+/* HEADER - ШАПКА */
+.header {
+        padding: 20px 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #fff;
+}
+
+.header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+/* Для того чтобы вернуться обратно */
+.header-container a {
+        font-size: 25px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #ff6347; 
+}
+
+
+.logo {
+        font-size: 25px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #ff6347; 
+}
+
+.header-nav ul {
+        display: flex;
+}
+.header-nav li + li {
+        margin-left: 40px;
+}
+
+
+.header-nav a {
+        font-size: 16px;
+        color: #676770;
+        transition: color 0.5s;
+}
+
+.header-nav a:hover {
+        color:#f13b1b;
+
+}
+
+.header-nav a:active {
+        color:#be361e;
+}
+
+
+/*---------------- MAIN - ОСНОВНАЯ ЧАСТЬ------------------- */
+
+
+.welcome {
+        min-height: 600px;
+        height: 105vh;
+        color: white;
+        padding: 195px 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        background-color: #676770;
+        background-image: url(images/background/parking.jpg);
+        background-size: cover;
+        background-position: center;
+}
+
+.welcome-heading {
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-shadow: 3px 5px 2px #000;
+        margin-bottom: 120px;
+}
+
+.welcome-links > * + *{
+        margin-left: 20px;
+}
+
+.link {
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-color: #ff6347;
+        border-radius: 4px;
+        transition: background-color 0.4s;
+}
+
+.link:hover{
+        background-color: #f13b1b;
+}
+
+.link:active{
+        background-color: #be361e;
+}
+
+/* FOOTER - ПОДВАЛ САЙТА */
+.footer {
+
+}
+
+.footer-copy {
+        text-align: center;
+        background-color: #383838;
+        color: #9E9E9E;
+
+}
+
+
+
+/*------------------Контакты----------------------- */
+
+.contact {
+        text-align: center;
+}
+
+.main .contact{
+        padding: 0 100px;
+}
+.contact-wrapper {
+        margin-top: 70px;
+        margin-bottom: 60px;
+
+}
+
+.contact-heading {
+        font-size: 40px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+}
+
+/* Настройка фотографий, чтобы  сделать их круглыми */
+.Students img {
+        margin: 10px;
+        border: 1px solid #676770;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+}
+
+.Students .title img {
+        margin: 0x;
+        border: 0px solid #676770;
+        border-radius: 0%;
+        width: 20px;
+        height: 20px;
+}
+/* Настройка фотографии ОмГТУ по размеру */
+.OmGTU img {
+        width: 750px;
+        border: 1px solid black;
+}
+
+
+.circlelogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        padding: 0 15px;
+        margin: 0 auto;
+}
+.circlelogo .Students {
+        display: flex;
+        height: 33%;
+        width: 100%;
+        border: 1px solid #676770;
+        border-radius: 10px;
+}
+.circlelogo .student > * + * {
+        margin-top: 20px;
+}
+
+.Students .title {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: space-between ;
+        padding-bottom: 15px;
+}
+
+.Students p {
+        font-size: 20px;
+        line-height: 1;
+}
+.Students h3 {
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 1;
+}
+.footer-contact{
+        margin-top: 270px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: aliceblue;
+        line-height: 1.6;
+}
+
+.OmGTU b{
+        font-size: 22px;
+}
+
+
+
+/*------------------ПАПКА С ПОДРОБНЕЕ----------------------- */
+.about {
+        margin-top: 5%;
+        text-align: center;
+}
+
+.common-section {
+        text-align: center;
+        padding: 80px 0;
+}
+
+
+/*------------------КНОПКИ----------------------- */
+.tab-section {
+}
+
+.tabs {
+
+}
+
+.tabs-nav {
+        margin-bottom: 50px;
+}
+
+.tabs-nav button {
+        padding: 0 30px;
+
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+
+        background-color: #92A0AD;
+        border-radius: 4px;
+}
+
+.tabs-nav button.active {
+        background-color: #ff6347;
+}
+
+.tabs-nav button + button{
+        margin-left: 15px;
+}
+
+
+.tabs_item{
+        animation: fade 1s;
+}
+
+@keyframes fade {
+        from{
+                opacity: 0.3;
+        }
+        to{
+                opacity: 1;
+        }
+}
+
+
+.tabs_item img {
+        margin-bottom: 15px;
+}
+
+.tabs_item h4 {
+        margin-bottom: 15px;
+        font-size: 31px;
+        line-height: 36px;
+        color: #676770;
+}
+
+.tabs-desc {
+
+}
